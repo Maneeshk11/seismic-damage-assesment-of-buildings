@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-arrows::-webkit-outer-spin-button,
+  .hide-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .hide-arrows {
+    -moz-appearance: textfield;
+  }
+  .coingrid-scrollbar {
+    scroll-margin-right: 1rem;
+    -webkit-scroll-margin-right: 1rem;
+  }
+  .coingrid-scrollbar::-webkit-scrollbar-track {
+    visibility: hidden;
+    -webkit-visibility: hidden;
+  }
+  .coingrid-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    -webkit-width: 4px;
+    -webkit-height: 4px;
+  }
+}
+
+
+
+
