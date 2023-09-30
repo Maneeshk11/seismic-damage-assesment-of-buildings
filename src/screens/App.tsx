@@ -1,8 +1,8 @@
 
 const App = () => {
     return (
-        <div>
-            <span className="text-yellow-500 text-9xl">Home page</span>
+        <div className="p-5">
+            <span className="text-yellow-500 text-4xl">Home page</span>
         </div>
     );
 }
