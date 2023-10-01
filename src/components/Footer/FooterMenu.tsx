@@ -11,7 +11,7 @@ const FooterLink = ({ title, src, className }: { title: string, src: string, cla
 export const FooterMenu = () => {
     return (
         <div className="flex flex-row items-center">
-            <FooterLink title={"ABOUT"} src={"#"}/>
+            <FooterLink title={"ABOUT"} src={"aboutus"}/>
             <FooterLink title={"CONTACT US"} src={"#"} className="border-x border-black" />
             <FooterLink title={"CONNECT"} src={"#"} />
         </div>

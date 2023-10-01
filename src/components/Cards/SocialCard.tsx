@@ -4,6 +4,7 @@ import TwitterImg from "public/assets/icons/twitter.svg"
 import LinkedinImg from "public/assets/icons/linkedin.svg"
 import Image from "next/image"
 import Link from "next/link"
+import { FC } from "react"
 
 const SocialImage = ({ imgSrc, src }: { imgSrc: string, src: string }) => {
     return (
@@ -13,10 +14,14 @@ const SocialImage = ({ imgSrc, src }: { imgSrc: string, src: string }) => {
     )
 }
 
+interface SocialCardProps {
+    className?: string;
+}
 
-export const FooterSocial = () => {
+
+export const SocialCard:FC<SocialCardProps> = ({className}) => {
     return (
-        <div className="flex flex-row items-center gap-x-6">
+        <div className={`flex flex-row items-center ${className}`}>
             <SocialImage imgSrc={LinkedinImg} src={"#"} />
             <SocialImage imgSrc={TwitterImg} src={"#"} />
             <SocialImage imgSrc={GithubImg} src={"#"} />
