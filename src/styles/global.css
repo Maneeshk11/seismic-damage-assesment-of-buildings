@@ -58,10 +58,9 @@
   src: url("/fonts/Sen/Sen-ExtraBold.ttf");
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(184deg, #FFB067 3.56%, rgba(255, 255, 255, 0.00) 96.44%);
+.backgroundColor { 
+  background : linear-gradient(184deg, #FFB067 -9.02%, rgba(255, 255, 255, 0.00) 80.86%);
+  background-repeat: no-repeat;
 }
 
 
