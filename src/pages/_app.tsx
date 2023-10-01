@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer/Footer";
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
         <div className="relative">
-            <div className="absolute backgroundColor w-full h-[50vh] -top-10 -z-10"></div>
+            <div className="absolute backgroundColor w-full h-[50vh] -z-10"></div>
             <Navbar />
             <Component {...pageProps} />
             <Footer />
