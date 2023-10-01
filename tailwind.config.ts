@@ -9,6 +9,9 @@ const config: Config = {
       fontFamily: {
         sans: ["Sen", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        brown: "#603D1D"
+      },
       screens: {
         lg: "1250px",
         mobile: { max: "639px" },

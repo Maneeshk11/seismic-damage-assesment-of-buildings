@@ -12,7 +12,7 @@ const NavItem = ({ href, title }: { href: string; title: string }) => {
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between text-white py-2 px-8">
+    <nav className="flex items-center justify-between text-white py-8 px-8 text-lg">
       <div className="flex items-center">
         {/* Logo */}
         <Image
@@ -22,7 +22,7 @@ const Navbar = () => {
         />
       </div>
       <div className="flex flex-row items-center gap-x-10">
-        <NavItem href="#" title="HOME" />
+        <NavItem href="/" title="HOME" />
         <NavItem href="#" title="XYZXYZ" />
         <NavItem href="aboutus" title="ABOUT US" />
         <NavItem href="#" title="CONTACT US" />
