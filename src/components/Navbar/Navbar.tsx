@@ -1,14 +1,33 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "public/assets/logo-design-good-designer.jpg";
+
+const NavItem = ({href, title}:{href:string, title:string}) => {
+    return (
+        <Link href={href}>
+                <span className="text-black cursor-pointer">{title}</span>
+        </Link>
+    )
+}
 
 const Navbar = () => {
     return (
-        <div>
-            <span className="text-5xl">Navbar</span>
-            <Link href="aboutus">
-                <button>About us</button>
-            </Link>
-
+    <nav className="flex items-center justify-between text-white py-2 px-8">
+        <div className="flex items-center">
+        {/* Logo */}
+        <Image
+        src={logo}
+        alt="Logo"
+        className="w-10 aspect-square rounded-md"
+        />
         </div>
-    )
-}
+        <div className="flex flex-row items-center gap-x-10">
+            <NavItem href="#" title="HOME"/>
+            <NavItem href="#" title="XYZXYZ"/>
+            <NavItem href="#" title="ABOUT US"/>
+            <NavItem href="#" title="CONTACT US"/>
+        </div>
+    </nav>
+    );
+};
 export default Navbar;
