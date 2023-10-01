@@ -7,7 +7,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
+        sans: ["Sen", ...defaultTheme.fontFamily.sans],
       },
       screens: {
         lg: "1250px",

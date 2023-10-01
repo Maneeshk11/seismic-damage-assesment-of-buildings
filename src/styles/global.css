@@ -28,29 +28,34 @@
 }
 
 @font-face {
-  font-family: Satoshi;
+  font-family: Sen;
   font-weight: 300;
-  src: url("/fonts/Satoshi/Satoshi-Light.woff2");
+  src: url("/fonts/Sen/Sen-Regular.ttf");
 }
 @font-face {
-  font-family: Satoshi;
+  font-family: Sen;
   font-weight: 400;
-  src: url("/fonts/Satoshi/Satoshi-Regular.woff2");
+  src: url("/fonts/Sen/Sen-Regular.ttf");
 }
 @font-face {
-  font-family: Satoshi;
+  font-family: Sen;
   font-weight: 500;
-  src: url("/fonts/Satoshi/Satoshi-Medium.woff2");
+  src: url("/fonts/Sen/Sen-Medium.ttf");
 }
 @font-face {
-  font-family: Satoshi;
+  font-family: Sen;
+  font-weight: 600;
+  src: url("/fonts/Sen/Sen-SemiBold.ttf");
+}
+@font-face {
+  font-family: Sen;
   font-weight: 700;
-  src: url("/fonts/Satoshi/Satoshi-Bold.woff2");
+  src: url("/fonts/Sen/Sen-Bold.ttf");
 }
 @font-face {
-  font-family: Satoshi;
+  font-family: Sen;
   font-weight: 800;
-  src: url("/fonts/Satoshi/Satoshi-Black.woff2");
+  src: url("/fonts/Sen/Sen-ExtraBold.ttf");
 }
 
 body {
