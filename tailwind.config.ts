@@ -10,7 +10,8 @@ const config: Config = {
         sans: ["Sen", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        brown: "#603D1D"
+        brown: "#603D1D",
+        yellow: "#FFC670"
       },
       screens: {
         lg: "1250px",
