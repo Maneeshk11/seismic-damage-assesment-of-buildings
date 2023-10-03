@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row items-center gap-x-10">
         <NavItem href="/" title="HOME" />
-        <NavItem href="#" title="XYZXYZ" />
+        <NavItem href="compute" title="COMPUTE" />
         <NavItem href="aboutus" title="ABOUT US" />
         <NavItem href="#" title="CONTACT US" />
       </div>

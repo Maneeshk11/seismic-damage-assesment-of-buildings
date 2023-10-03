@@ -63,5 +63,11 @@
   background-repeat: no-repeat;
 }
 
+.selectarrow {
+  background: url("/assets/icons/selectarrow.svg") no-repeat right;
+  background-size: 1rem;
+  background-position: 97%;
+}
+
 
 
