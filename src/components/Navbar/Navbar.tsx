@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "public/assets/logo-design-good-designer.jpg";
+import logo from "public/assets/seismic_wave.svg";
 
 const NavItem = ({ href, title }: { href: string; title: string }) => {
   return (
@@ -23,9 +23,9 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row items-center gap-x-10">
         <NavItem href="/" title="HOME" />
-        <NavItem href="compute" title="COMPUTE" />
-        <NavItem href="aboutus" title="ABOUT US" />
-        <NavItem href="#" title="CONTACT US" />
+        <NavItem href="/compute" title="COMPUTE" />
+        <NavItem href="/aboutus" title="ABOUT US" />
+        <NavItem href="/contact" title="CONTACT US" />
       </div>
     </nav>
   );

@@ -2,6 +2,7 @@ import { Heading } from "@/components/Atoms/Heading"
 import { InputMotion } from "@/components/ComputePage/InputMotion"
 import { BuildingProperties } from "@/components/ComputePage/BuildingProperties"
 import { Button } from "@/components/Atoms/Button"
+import { ReactNode } from "react"
 
 const ExecuteCard = () => {
     return (
@@ -13,16 +14,16 @@ const ExecuteCard = () => {
     )
 }
 
-export const ComputePage = () => {
+export const ComputePage = ({meta}: {meta:ReactNode}) => {
     return (
         <div className="w-full py-8 mt-12 overflow-y-scroll mb-14">
+            {meta}
             <Heading title={"SEISMIC DAMAGE ASSESSMENT OF BUILDINGS"} className="w-5/6 mx-auto"></Heading>
             <div className="flex flex-col mx-auto items-start mt-16 gap-y-8 w-fit">
                 <InputMotion />
                 <BuildingProperties />
                 <ExecuteCard />
             </div>
-            
         </div>
     )
 }

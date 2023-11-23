@@ -1,5 +1,4 @@
 
-import SelectArrowIcon from "public/assets/icons/selectarrow.svg"
 
 export const SelectDropdown = () => {
     return (
