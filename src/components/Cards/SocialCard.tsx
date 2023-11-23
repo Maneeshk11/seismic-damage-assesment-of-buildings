@@ -8,7 +8,7 @@ import { FC } from "react"
 
 const SocialImage = ({ imgSrc, src, className }: { imgSrc: string, src: string, className?: string }) => {
     return (
-        <Link href={src}>
+        <Link href={""}>
             <Image src={imgSrc} alt="icon" className={`w-8 hover:transform hover:-translate-y-1 hover:-translate-x-1 duration-100 ${className}`}></Image>
         </Link>
     )
@@ -16,16 +16,20 @@ const SocialImage = ({ imgSrc, src, className }: { imgSrc: string, src: string, 
 
 interface SocialCardProps {
     className?: string;
+    linkedinUrl: string;
+    twitterUrl: string;
+    githubUrl: string;
+    facebookUrl: string;
 }
 
 
-export const SocialCard:FC<SocialCardProps> = ({className}) => {
+export const SocialCard: FC<SocialCardProps> = ({ className, linkedinUrl, twitterUrl, githubUrl, facebookUrl }) => {
     return (
         <div className={`flex flex-row items-center ${className}`}>
-            <SocialImage imgSrc={LinkedinImg} src={"#"} />
-            <SocialImage imgSrc={TwitterImg} src={"#"} className="mt-1" />
-            <SocialImage imgSrc={GithubImg} src={"#"} />
-            <SocialImage imgSrc={FacebookImg} src={"#"} />
+            <SocialImage imgSrc={LinkedinImg} src={linkedinUrl} />
+            <SocialImage imgSrc={TwitterImg} src={twitterUrl} className="mt-1" />
+            <SocialImage imgSrc={GithubImg} src={githubUrl} />
+            <SocialImage imgSrc={FacebookImg} src={facebookUrl} />
         </div>
     )
 }
