@@ -3,9 +3,11 @@ import App from "@/screens/App";
 
 const Index = () => {
     return (
-        <App
-
-        />
+        <App meta={
+            <Meta title="Seismic Activity Assessment of Buildings"
+                description="Seismic Activity Assessment of Buildings"
+            />
+        } />
     );
 };
 

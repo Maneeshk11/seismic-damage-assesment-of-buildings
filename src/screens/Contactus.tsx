@@ -1,29 +1,24 @@
-import { Heading } from "@/components/Contact/Heading";
-import { Input } from "@/components/Contact/Input";
+import { Heading } from "@/components/Atoms/Heading";
+import { InputBox } from "@/components/Contact/Input";
 import { Button } from "@/components/Atoms/Button";
+import { ReactNode } from "react";
 
-export const ContactPage = () => {
+export const ContactPage = ({meta}: {meta:ReactNode}) => {
     return (
-        <div className="w-full py-2 mt-5">
-            <Heading title={"CONTACT US"} className="w-5/6 mx-auto"></Heading>
-            <div className="flex flex-row mx-auto w-5/6 py-10">
-                <div className=" w-1/2 pr-2">
-                    <Input label = {"Name:"} placeholder="Enter your Name"></Input>
-                </div>
-                <div className="w-1/2 pl-2">
-                    <Input label = {"Email:"} placeholder="Enter your email"></Input>
-                </div>
+        <div className="w-full py-8 mt-12">
+            {meta}
+            <Heading title={"CONTACT US"} className="w-4/5 mx-auto"></Heading>
+            <div className="flex flex-row mx-auto w-4/5 pt-10 pb-8 gap-x-10 px-8 gap-y-8 flex-wrap">
+                <InputBox heading="Name:" placeholder="Enter your Name" />
+                <InputBox heading="Email:" placeholder="Enter your email" />
             </div>
-            <div className="w-5/6 mx-auto">
-                <label className="block text-black">Message:</label>
-                <input 
-                    type="text"
-                    className="w-full h-40 text-lg border border-black rounded-lg py-2 px-3"
-                    placeholder="Enter your Message"/>
-                {/* <Input label = {"Message"} placeholder="Enter Message"></Input> */}
+            <div className="w-4/5 mx-auto px-8 flex flex-col gap-y-3">
+                <span className="w-24 text-xl">Message:</span>
+                <textarea name="" id="" className="w-full h-40 border-2 border-brown border-opacity-50 px-4 py-1 outline-none"
+                    placeholder="Enter your Message"></textarea>
             </div>
-            <div className="w-5/6 mx-auto py-3">
-                <Button title="Submit"/>
+            <div className="w-4/5 mx-auto py-8 px-8">
+                <Button title="Submit" />
             </div>
         </div>
 

@@ -2,14 +2,20 @@ import { FC } from "react";
 
 
 interface HeadingProps {
-    title: string;
     className?: string;
 }
 
-export const Paragraph:FC<HeadingProps>= ({title, className}) => {
+export const Paragraph: FC<HeadingProps> = ({ className }) => {
     return (
         <div className={`${className}`}>
-            <span className="font-normal text-normal text-black">{title}</span>
+            <span className="font-normal text-xl text-black">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Distinctio, dignissimos, fuga perspiciatis similique error amet modi eveniet cumque,
+                deserunt at facere et! Ratione libero facilis tempore fugit corporis aut aperiam.Cumque quibusdam nulla eos
+                quam explicabo totam illum in vel, mollitia consequatur possimus, ea necessitatibus reiciendis eveniet impedit
+                earum quo sed eligendi molestiae, beatae aspernatur optio dolorum iste ipsum? Quibusdam.Voluptas aliquam in amet
+                quos illum, nulla iusto earum modi! Voluptates unde facilis tempora impedit
+                odit omnis esse quam debitis natus, temporibus, porro dolor optio! Ad veniam pariatur vel
+                accusamus?</span>
         </div>
     )
 }

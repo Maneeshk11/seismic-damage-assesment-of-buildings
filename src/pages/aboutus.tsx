@@ -1,8 +1,13 @@
+import { Meta } from "@/layouts/Meta";
 import Aboutus from "@/screens/Aboutus";
 
 const AboutusPage = () => {
     return (
-        <Aboutus></Aboutus>
+        <Aboutus meta={
+            <Meta
+                title="About Us | Seismic Assessment"
+                description="About Us | Seismic Assessment" />
+        } />
     )
 }
 

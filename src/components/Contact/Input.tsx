@@ -1,19 +1,16 @@
 import { FC } from "react";
 
 interface InputBoxProps {
-    label: string;
+    heading: string;
+    className?: string;
     placeholder?: string;
 }
 
-export const Input:FC<InputBoxProps> = ({label, placeholder}) => {
+export const InputBox:FC<InputBoxProps> = ({heading, className, placeholder}) => {
     return (
-        <div className="mb-4">
-            <label className="block text-black">{label}</label>
-            <input
-                type="text"
-                className="w-full h-10 text-lg border border-black rounded-lg py-2 px-3"
-                placeholder={`${placeholder}`}
-            />
+        <div className="flex flex-row items-center">
+            <span className="w-24 text-xl">{heading}</span>
+            <input type="text" placeholder={placeholder} className="w-96 border-2 border-brown border-opacity-50 px-4 py-1 outline-none" />
         </div>
     )
 }
