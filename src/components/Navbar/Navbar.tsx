@@ -12,16 +12,16 @@ const NavItem = ({ href, title }: { href: string; title: string }) => {
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between text-white py-8 px-8 text-lg">
+    <nav className="flex items-center justify-between text-white py-8 px-8 lg:text-lg mobile:sm tablet:base">
       <div className="flex items-center">
         {/* Logo */}
         <Image
           src={logo}
           alt="Logo"
-          className="w-10 aspect-square rounded-md"
+          className="lg:w-10 mobile:w-7 tablet:w-8 aspect-square rounded-md"
         />
       </div>
-      <div className="flex flex-row items-center gap-x-10">
+      <div className="flex flex-row items-center lg:gap-x-10 mobile:gap-x-6 tablet:gap-x-8">
         <NavItem href="/" title="HOME" />
         <NavItem href="/compute" title="COMPUTE" />
         <NavItem href="/aboutus" title="ABOUT US" />

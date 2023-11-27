@@ -8,7 +8,7 @@ interface HeadingProps {
 export const Paragraph: FC<HeadingProps> = ({ className }) => {
     return (
         <div className={`${className}`}>
-            <span className="font-normal text-xl text-black">Lorem ipsum dolor sit amet consectetur
+            <span className="font-normal lg:text-xl mobile:text-base tablet:text-lg text-black justify-between">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Distinctio, dignissimos, fuga perspiciatis similique error amet modi eveniet cumque,
                 deserunt at facere et! Ratione libero facilis tempore fugit corporis aut aperiam.Cumque quibusdam nulla eos
                 quam explicabo totam illum in vel, mollitia consequatur possimus, ea necessitatibus reiciendis eveniet impedit

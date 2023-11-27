@@ -15,8 +15,8 @@ const config: Config = {
       },
       screens: {
         lg: "1250px",
-        mobile: { max: "639px" },
-        tablet: { max: "1250px" },
+        mobile: { max: "639px" }, //sm 
+        tablet: { max: "1249px" }, //md
       },
     },
   },

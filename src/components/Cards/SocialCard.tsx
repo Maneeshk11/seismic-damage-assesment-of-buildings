@@ -9,7 +9,7 @@ import { FC } from "react"
 const SocialImage = ({ imgSrc, src, className }: { imgSrc: string, src: string, className?: string }) => {
     return (
         <Link href={src} target="_blank">
-            <Image src={imgSrc} alt="icon" className={`w-8 hover:transform hover:-translate-y-1 hover:-translate-x-1 duration-100 ${className}`}></Image>
+            <Image src={imgSrc} alt="icon" className={`lg:w-8 mobile:w-4 tablet:w-6 hover:transform hover:-translate-y-1 hover:-translate-x-1 duration-100 ${className}`}></Image>
         </Link>
     )
 }
