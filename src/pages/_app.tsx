@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer/Footer";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
-        <div className="relative">
+        <div className="relative overflow-x-hidden">
             <div className="absolute backgroundColor w-full h-[50vh] -z-10"></div>
             <Navbar />
             <Component {...pageProps} />
