@@ -17,6 +17,7 @@ const config: Config = {
         lg: "1250px",
         mobile: { max: "639px" },
         tablet: { max: "1250px" },
+        tabletOnly: { min: "640px", max: "1250px" },
       },
     },
   },
