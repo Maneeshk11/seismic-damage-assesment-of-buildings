@@ -8,14 +8,8 @@ interface HeadingProps {
 export const Paragraph: FC<HeadingProps> = ({ className }) => {
     return (
         <div className={`${className}`}>
-            <span className="font-normal text-xl text-black">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Distinctio, dignissimos, fuga perspiciatis similique error amet modi eveniet cumque,
-                deserunt at facere et! Ratione libero facilis tempore fugit corporis aut aperiam.Cumque quibusdam nulla eos
-                quam explicabo totam illum in vel, mollitia consequatur possimus, ea necessitatibus reiciendis eveniet impedit
-                earum quo sed eligendi molestiae, beatae aspernatur optio dolorum iste ipsum? Quibusdam.Voluptas aliquam in amet
-                quos illum, nulla iusto earum modi! Voluptates unde facilis tempora impedit
-                odit omnis esse quam debitis natus, temporibus, porro dolor optio! Ad veniam pariatur vel
-                accusamus?</span>
+            <span className="font-normal text-xl text-black">Welcome to our website dedicated to computing seismic damage assessments for buildings. Our platform specializes in analyzing and evaluating the potential structural vulnerabilities of buildings in the face of seismic activity. Using the unique properties of your structure’s inputs we are able to assess the probable damage levels that might occur during an earthquake.
+                Our goal is to offer insights and recommendations to enhance structural resilience and mitigate potential risks. Explore our tools and resources to better understand how your building may respond to seismic forces and take proactive measures towards safer, more resilient structures.</span>
         </div>
     )
 }
